@@ -1,0 +1,26 @@
+{
+  "name": "monorepo-simple",
+  "version": "1.0.0",
+  "description": "Monorepo simple",
+  "scripts": {
+    "start": "ts-node -T sample/main/fuse.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuse-box/sandbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fuse-box/sandbox/issues"
+  },
+  "homepage": "https://github.com/fuse-box/sandbox#readme",
+  "devDependencies": {
+    "fuse-box": "next",
+    "fuse-box-typechecker": "latest",
+    "prettier": "latest",
+    "ts-node": "latest",
+    "tslib": "latest",
+    "typescript": "latest"
+  }
+}
