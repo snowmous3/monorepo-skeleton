@@ -1,13 +1,11 @@
 {
   "extends": "./tsconfig.build.json",
   "compilerOptions": {
-    "target": "es2018",
-    "module": "commonjs",
-    "lib": ["es2017", "dom"],
-    "moduleResolution": "node",
-    "importHelpers": true,
-    "skipLibCheck": true,
+    "module": "Node16",
     "baseUrl": ".",
+    "experimentalDecorators": true,
+    "moduleResolution": "node16",
+    "esModuleInterop": true,
     "paths": {
       "@services/*": ["services/*/src"],
       "@libraries/*": ["libraries/*/src"]

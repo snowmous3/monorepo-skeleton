@@ -1,0 +1,13 @@
+{
+    "extends": "./tsconfig.json",
+    "include": ["src"],
+    "rootDir": "./src",
+    // required by sentry
+    "compilerOptions": {
+      "sourceMap": true,
+      "inlineSources": true,
+      "sourceRoot": "/"
+    },
+    "exclude": ["node_modules", "dist"]
+}
+  
