@@ -2,23 +2,20 @@
   "name": "monorepo-simple",
   "version": "1.0.0",
   "description": "Monorepo simple",
-  "scripts": {
-    "start": "ts-node -T sample/main/fuse.ts"
+  "workspaces": {
+    "packages": [
+      "libraries/types",
+      "libraries/*",
+      "services/*"
+    ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fuse-box/sandbox.git"
+  "private": true,
+  "scripts": {
+    "build:libraries": "yarn constraints && yarn workspaces foreach --recursive --parallel -vv --topological-dev --from '@libraries/*' run build"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fuse-box/sandbox/issues"
-  },
-  "homepage": "https://github.com/fuse-box/sandbox#readme",
   "devDependencies": {
-    "fuse-box": "next",
-    "fuse-box-typechecker": "latest",
-    "prettier": "latest",
     "ts-node": "latest",
     "tslib": "latest",
     "typescript": "latest"

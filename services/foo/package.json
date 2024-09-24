@@ -1,5 +1,5 @@
 {
-    "name": "@org/bar",
+    "name": "@services/foo",
     "version": "1.0.0",
     "local:main": "src/index.ts",
     "typings": "src/index.ts",
